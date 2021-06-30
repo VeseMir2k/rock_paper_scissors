@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+button {
+  font-family: "Amatic SC", cursive;
+}
+
+html {
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0 50px;
+  font-size: 40px;
+}
+
+.select {
+  width: 1000px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.select h3 {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.select div {
+  cursor: pointer;
+  flex-basis: 200px;
+  height: 200px;
+  margin: 0 20px;
+  font-size: 100px;
+  text-align: center;
+  line-height: 200px;
+  background-color: #444;
+  border: 3px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s;
+}
+
+.select div:hover {
+  border-color: greenyellow;
+  color: greenyellow;
+}
+
+button {
+  cursor: pointer;
+  margin-bottom: 50px;
+  font-size: 40px;
+  padding: 10px 30px;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: yellowgreen;
+}
+
+.panels {
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+  text-align: center;
+}
+
+.panels h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.panels h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.panel-left,
+.panel-right {
+  flex-basis: 30%;
+}
+
+.panel-left span,
+.panel-right span {
+  font-weight: 700;
+}
+
+.panel-left [data-summary="your-choice"] {
+  color: yellowgreen;
+}
+
+.panel-left [data-summary="ai-choice"] {
+  color: brown;
+}
+
+.panel-right .wins span {
+  color: yellowgreen;
+}
+
+.panel-right .losses span {
+  color: brown;
+}
+
+.panel-right .draws span {
+  color: blueviolet;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papier, kamień, nożyce</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>GRA "PAPIER, KAMIEŃ, NOŻYCE"</h1>
+    <div class="select">
+      <h3>Proszę, wybierz:</h3>
+      <div data-option="papier"><i class="fas fa-hand-paper"></i></div>
+      <div data-option="kamień"><i class="fas fa-hand-rock"></i></div>
+      <div data-option="nożyce"><i class="fas fa-hand-scissors"></i></div>
+    </div>
+
+    <button class="start">Let's play!</button>
+    <div class="panels">
+      <div class="panel-left">
+        <h3>Wyniki gry</h3>
+        <p>Twój wybór: <span data-summary="your-choice"></span></p>
+        <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+        <h2>Zwycięzca gry: <span data-summary="who-win"></span></h2>
+      </div>
+
+      <div class="panel-right">
+        <h3>Aktualne wyniki</h3>
+        <p class="numbers">liczba gier: <span>0</span></p>
+        <p class="wins">wygranych: <span>0</span></p>
+        <p class="losses">przegranych: <span>0</span></p>
+        <p class="draws">remisów: <span>0</span></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
